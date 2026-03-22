@@ -4,7 +4,8 @@
 }
 
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /*font-family:Verdana, Geneva, Tahoma, sans-serif;*/
+    font-family: monospace;
     padding: 1em;
 }
 
@@ -17,6 +18,15 @@ header {
 .info {
     display: flex;
     justify-content: center;
+    font-size: 1.2em;
+}
+
+.dropdown {
+    width: 5em;
+    height: 2em;
+    border: 1 px solid black;
+    background-color: lightblue;
+
 }
 
 .container {
@@ -32,13 +42,17 @@ header {
     height: 25em;
     border: 1px solid black;
     background-color: lightblue;
-    margin: 0;
     padding: 1em;
     box-sizing: border-box;
     flex-shrink: 0;
     flex-grow: 0;
     font-size: 16px;
     line-height: 1.5;
+    resize: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
 }
 
 textarea.box {
