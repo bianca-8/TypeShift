@@ -22,11 +22,24 @@ header {
 }
 
 .dropdown {
-    width: 5em;
-    height: 2em;
-    border: 1 px solid black;
-    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
 
+.dropdown label {
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown select {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid black;
+    background-color: lightblue;
+    border-radius: 4px;
 }
 
 .container {
