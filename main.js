@@ -127,6 +127,8 @@ function doShift(text, shift) {
     for (let char of text) {
         if (mapping[char]) {
             result += mapping[char];
+        } else if (mapping[char.toLowerCase()]) {
+            result += mapping[char.toLowerCase()].toUpperCase();
         } else {
             result += char;
         }
